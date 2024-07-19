@@ -38,7 +38,7 @@ function App() {
           <button>try again?</button>
         </div>
       ) : (
-        // 3. Question Cardssssssssssssssss!!!!!!!!!!!
+        // 3. Question Cards
         <div className="question-card">
           <h2>
             Question {currentQuestion + 1} of {questions.length}
