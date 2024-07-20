@@ -1,16 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
-
-const questions = [
-  {
-    text: "Two-wheeled vehicles have high maneuverability, but you must not squeeze between other vehicles.",
-    options: [{ id: 0, isCorrect: true, isIncorrect: false }],
-  },
-  {
-    text: "I farted just now?",
-    options: [{ id: 1, isCorrect: true, isIncorrect: false }],
-  },
-];
+import { questions } from "./questions";
 
 function App() {
   //Properties!
@@ -21,7 +11,11 @@ function App() {
 
   // Helper Functions
   const optionClicked = (isCorrect) => {
-    console.log(isCorrect);
+    if(isCorrect) {
+      setScore(score +1)
+    }
+    // setCurrentQuestion(currentQuestion + 1)
+
   };
 
   return (
